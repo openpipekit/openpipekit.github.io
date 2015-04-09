@@ -1,3 +1,5 @@
+![Open Pipe Kit concept](images/opk-concept.png)
+
 ## Join us!
 - Join the conversation on this project, [join our email group](https://groups.google.com/forum/#!forum/open-pipe-kit).
 - See our [Development Roadmap](https://github.com/open-eio/Open-Pipe-Kit/issues/1)
