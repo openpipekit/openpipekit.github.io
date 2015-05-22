@@ -45,9 +45,7 @@ The Internet has often been compared to a system of pipes.  Imagine that these p
  
  We believe it is vital for people in the fields of sensor journalism, environmental monitoring, and agriculture to have full control over the data they collect, and to be able to use reliable, easily-acquired, open source hardware and software that can be modified and repurposed without permission.
 
- The Open Pipe Kit is a system designed to meet this need, based on a Raspberry Pi and Node.js.  Users of OPK will be able to collect data from sensors and store it either locally (on microSD) or remotely on a server of their own choosing. 
+ The Open Pipe Kit is a system designed to meet this need, based on a Raspberry Pi and Node.js.  Users of OPK will be able to collect data from sensors and store it either locally (on microSD) or remotely on a server of their own choosing.
 
-# Join us!
-Join the conversation on this project, [join our email group](https://groups.google.com/forum/#!forum/open-pipe-kit).
-
-
+## Tutorials
+See the [OPK Tutorials](https://github.com/openpipekit/opk-tutorials)
