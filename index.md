@@ -2,8 +2,8 @@
 
 ## Join us!
 - Join the conversation on this project, [join our email group](https://groups.google.com/forum/#!forum/open-pipe-kit).
-- See our [Development Roadmap](https://github.com/open-eio/Open-Pipe-Kit/issues/1)
-- Join us for the weekly OPK check in on Wednesdays at 7pm EST. Email rj@rjsteinert.com  with your Gmail address for a Google Hangout invite or your phone number and we'll call you in. Also, if the URL for the Hangout stays the same, it should be accessible [here](https://plus.google.com/hangouts/_/rjsteinert.com).
+- Join us for the weekly OPK check in on Thursdays at 7pm EST. Email rj@rjsteinert.com  with your Gmail address for a Google Hangout invite or your phone number and we'll call you in. Also, if the URL for the Hangout stays the same, it should be accessible [here](https://plus.google.com/hangouts/_/rjsteinert.com).
+- See the [OPK Tutorials](https://github.com/openpipekit/opk-tutorials)
 
 ## What is the Open Pipe Kit?
 The Open Pipe Kit (OPK) is the missing plumbing between sensors and databases that will empower thousands of data journalists, civic hackers, farmers, etc. to collect data without needing a programmer's assistance or being locked into one data platform from a proprietary turn-key solution. 
