@@ -1,4 +1,4 @@
-![Open Pipe Kit concept](images/opk-concept.png)
+![Open Pipe Kit concept](images/opk.png)
 
 ## Join us!
 - Join the conversation on this project, [join our email group](https://groups.google.com/forum/#!forum/open-pipe-kit).
@@ -6,30 +6,24 @@
 - See the [OPK Tutorials](https://github.com/openpipekit/opk-tutorials)
 
 ## What is the Open Pipe Kit?
-The Open Pipe Kit (OPK) is the missing plumbing between sensors and databases that will empower thousands of data journalists, civic hackers, farmers, etc. to collect data without needing a programmer's assistance or being locked into one data platform from a proprietary turn-key solution. 
+The Open Pipe Kit is a number of prototype experiments in the service of lowering the barrier to control and access to the ability of piping data from a sensor to a database. 
 
-When the OPK is ready, anyone will be able to build a Pipe for $60 of readily accessible parts, access the Pipe User Interface from a smartphone or PC, choose a sensor from the list of supported sensors, plug the sensor into the Pipe, and then choose a location to stream data to. If the sensor or database you're hoping to use isn't on our list of drivers, someone with programming knowledge can contribute a driver for that sensor or database back to the Open Pipe Kit project. It's Open Source!
+## Where do you fit in?
 
-Some of the first sensor drivers we are building include ...
+### Are you a non-programmer who wants to pipe data from a sensor to a database?
+Check out our collection of Recipes on [RobotKitchen.org](http://robotkitchen.org) for easy to use robot generators that will get you going quickly.
 
-- Grove Dust sensor driver
-- Grove Moisture sensor driver
-- Grove Loudness sensor driver
-- Grove Temperature and Humidity sensor driver
-- Grove Air Quality sensor driver
-- Don Blair's Water Depth sensor driver for our friends in New Orleans who need flood alarms
+### Do you want to build a robot out of a Raspberry Pi or Arduino in five minutes from the command line?
+We built Yeobot, a robot generator that runs on the command line. Look through our list of Recipes, pick one, and then feed it to the Yeobot command. 
 
-Some of the first database drivers we are building include ...
+### Do you have scripts (like a Gist) that you've built to pipe data from a sensor to a database? 
+Follow this 5 minute tutorial to turn that script into a Yeobot Recipe. Next time you use that recipe you'll be able to rebuild and deploy it faster with than editing it by hand. 
 
-- CSV data reservoir driver, for local data storage or remote storage over email
-- Xively reservoir driver, for remote data storage
-- Dat data reservoir driver, for local and/or remote data storage
-- Apitronics Hive database (uses CouchDB) reservoir driver, for local and/or remote data storage 
-- Cloudant (uses CouchDB) for remote data storage
+### Do you wish the code you wrote to interface with that sensor or database would work with other CLI drivers written in any language?
+Consider wrapping that code up as a CLI so that it can interact with other CLI drivers.  See our [CLI Examples](https://github.com/openpipekit/CLI-Examples) to see how to write a CLI driver in your choice of language.
 
+> ./my-sensor-driver/pull | ./any-database-driver/push 
 
-## Who are the OPK developers?
-The Open Pipe Kit developers are software and electrical engineers that have been building environmental monitoring solutions for data journalists and civic hackers for years. They have now figured out a way to empower 95% of these use cases with one piece of software and documentation, they call it Open Pipe Kit. 
 
 
 ## The Open Pipe Kit Manifesto
