@@ -5,6 +5,9 @@
 - Join us for the weekly OPK check in on Thursdays at 7pm EST. Email rj@rjsteinert.com  with your Gmail address for a Google Hangout invite or your phone number and we'll call you in. Also, if the URL for the Hangout stays the same, it should be accessible [here](https://plus.google.com/hangouts/_/rjsteinert.com).
 - See the [OPK Tutorials](https://github.com/openpipekit/opk-tutorials)
 
+- [Journalist](journalist.md)
+- [Farmer](farmer.md)
+
 ## What is the Open Pipe Kit?
 The Open Pipe Kit is a number of prototype experiments in the service of lowering the barrier to control and access to the ability of piping data from a sensor to a database. 
 
