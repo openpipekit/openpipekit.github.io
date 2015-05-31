@@ -1,0 +1,1 @@
+window.OpenpipekitOrg={Models:{},Collections:{},Views:{},Routers:{},init:function(){"use strict";console.log("Hello from Backbone!"),setTimeout(function(){$(".carousel").carousel("next")},1e3),setTimeout(function(){$(".curtain").fadeIn()},9e3)}},$(document).ready(function(){"use strict";OpenpipekitOrg.init()}),this.JST=this.JST||{};
