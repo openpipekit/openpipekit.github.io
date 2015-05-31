@@ -5,13 +5,40 @@
 - Join us for the weekly OPK check in on Thursdays at 7pm EST. Email rj@rjsteinert.com  with your Gmail address for a Google Hangout invite or your phone number and we'll call you in. Also, if the URL for the Hangout stays the same, it should be accessible [here](https://plus.google.com/hangouts/_/rjsteinert.com).
 - See the [OPK Tutorials](https://github.com/openpipekit/opk-tutorials)
 
-- [Journalist](journalist.md)
-- [Farmer](farmer.md)
-
 ## What is the Open Pipe Kit?
 The Open Pipe Kit is a number of prototype experiments in the service of lowering the barrier to control and access to the ability of piping data from a sensor to a database. 
 
 ## Where do you fit in?
+
+<div class="table">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/noun_53112_cc.png" class="img-responsive">
+        <div class="caption">
+          <h3>[Environmental Detective](environmental-detective.md)</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/noun_36058_cc.png" class="img-responsive">
+        <div class="caption">
+          <h3>[Farmer](farmer.md)</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/noun_40341_cc.png" class="img-responsive">
+        <div class="caption">
+          <h3>[Developer](developer.md)</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ### Are you a non-programmer who wants to pipe data from a sensor to a database?
 Check out our collection of Recipes on [RobotKitchen.org](http://robotkitchen.org) for easy to use robot generators that will get you going quickly.
