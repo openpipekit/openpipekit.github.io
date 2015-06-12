@@ -1,3 +1,5 @@
+! This doc is under construction. Not done yet but it will be soon :-) !
+
 # Open Pipe Kit for Developers
 
 Howdy dev. Welcome to the Open Pipe Kit project. We've been doing weekly online hangouts sharing ideas and insights we've had around pulling data from sensors and pushing that data to a database. In the process we've come up with a couple of ideas we think are going to make all of our lives easier. We're interested in your thoughts so please do chime in on our issue queue. 
