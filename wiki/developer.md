@@ -1,7 +1,7 @@
 ! This doc is under construction. Not done yet but it will be soon :-) !
 
 # Open Pipe Kit for Developers
-Howdy dev. Welcome to the Open Pipe Kit project. We've been doing weekly online hangouts sharing ideas and insights we've had around pulling data from sensors and pushing data to databases. In the process we've come up with a couple of ideas we think are going to make all of our lives easier. We're interested in your thoughts so please do chime in on our issue queue.
+Howdy dev. Welcome to the Open Pipe Kit project. We've been doing weekly online hangouts sharing ideas and insights we've had around pulling data from sensors and pushing data to databases. In the process we've come up with a couple of ideas we think are going to make all of our lives easier. We're interested in your thoughts so please do join us if you have any questions or insights. Our weekly hangout is at 8pm EDT at [this url](https://plus.google.com/hangouts/_/rjsteinert.com/rj), our issue queue is [here](https://github.com/openpipekit/openpipekit/issues), and our mailing list is [here](https://groups.google.com/forum/#!forum/open-pipe-kit). Lastly, if you have any trouble understanding these docs, we would love if you showed up to our weekly hangout so we can give you a hand. 
 
 
 ## The Pipe
@@ -21,7 +21,7 @@ The first statement, the pull command, is `./opk-yoctopuce-temperature-cli/pull`
 45.6
 ```
 
-When looking at the contents of that `pull` command ([see on Github here](https://github.com/openpipekit/opk-yoctopuce-temperature-cli/blob/master/pull)), you'll find it's a python script with the magic shebang at the top of the file to let the system know how to interpret the script when run as an executable.
+When looking at the contents of that `pull` command ([see on Github here](https://github.com/openpipekit/opk-yoctopuce-temperature-cli/blob/master/pull)), you'll find it's a python script with the magic "shebang" at the top of the file to let the system know how to interpret the script when run as an executable.
 
 ```
 #!/usr/bin/python
@@ -29,8 +29,7 @@ When looking at the contents of that `pull` command ([see on Github here](https:
 
 When making your own cli, you'll also need to make the file executable by running `chmod +x yourFile`.
 
-
-The next statement is a little more complex because it requires parameters `./opk-phant-database-cli/push --url=http://data.sparkfun.com/f4jf4w4rDKh --private_key=ffDJs8efjslj --field=temperature`.  CLI's are a lot like simple functions. If the CLI follows the GNU CLI standards, you can ask the CLI what parameters it takes.  
+The next statement is a little more complex because it requires parameters `./opk-phant-database-cli/push --url=http://data.sparkfun.com/f4jf4w4rDKh --private_key=ffDJs8efjslj --field=temperature`.  CLI's are a lot like simple functions. If the CLI follows the GNU CLI standards, you can ask the CLI what parameters it takes by using the help option.  
 
 ```
 > ./opk-phant-cli/push --help
@@ -42,11 +41,11 @@ The next statement is a little more complex because it requires parameters `./op
   --data [data] This is optional because you can also pipe data to this command.
 ```
 
-What may trip you up here is that the square brackets around the `data` parameter indicates that it is an optional parameter and then explains that you can submit the data parameter to the CLI through a pipe.  By that we mean that if you send some output from one command over a pipe character like we did in the first example, this command will catch that output and place it in the data parameter. The pipe character in Unix based systems (Mac OS, Linux, etc) is literally a pipe that connects commands to each other. In the pipe example above, the pull command usually outputs the current value to the screen but because there is a pipe character connecting the two, the output gets captured by the pull command. The technical terms here are that the pull command emits a string over STDOUT (standard out) and the pull command accepts that string over STDIN (standard in). A lot of commamnds out there accept data through STDIN, it's the glue that holds a lot of systems like Linux together.
+What may trip you up here is that the square brackets around the `data` parameter indicates that it is an optional parameter and then explains that you can submit the data parameter to the CLI through a pipe.  By that we mean that if you send some output from one command over a pipe character like we did in the first example, this command will catch that output and use that in replace of the data parameter. The pipe character in Unix based systems (Mac OS, Linux, etc) is literally a pipe that connects commands to each other. In the pipe example above, the pull command usually outputs the current value to the screen but because there is a pipe character connecting the two, the output gets captured by the pull command. The technical terms here are that the pull command emits a string over STDOUT (standard out) and the pull command accepts that string over STDIN (standard in). A lot of commamnds out there accept data through STDIN, it's the glue that holds a lot of systems like Linux together.
 
 > Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface. [[source]](https://en.wikipedia.org/wiki/Unix_philosophy#Doug_McIlroy_on_Unix_programming) 
 
-That's from the guy who came up with the idea for the Unix pipe, Doug McIlroy. We think it's pretty rad.
+That's from the guy who came up with the idea for the Unix pipe, Doug McIlroy. We think it's pretty rad. Especially because it allows us to write sensor and database drivers that work together while they may be written in different languages.
 
 
 ## Keeping the pipe running
@@ -54,7 +53,7 @@ So our first example pipes one value to a database. The following are techniques
 
 
 ### Pump the pipe with `watch`
-Good ol' Unix, so many handy utitities laying about. Meet `watch`, one of many ways to keep the pipe running. In the following example, we print to the screen "Hello world." every 60 seconds.
+Good ol' Unix based systems, so many handy utitities laying about. Meet `watch`, one of many ways to keep the pipe running. In the following example, we print to the screen "Hello world." every 60 seconds.
 
 ```
 > watch -n60 'echo "Hello world."
@@ -66,7 +65,7 @@ That's cool, but let's pipe some data using watch.
 ```
 
 
-### Starting the pipe on boot The Super Fantastic Easy Way
+### Starting the pipe on boot The Super Fantastic Easy Way with Pirate.sh for Raspberry Pi
 Using the [Pirate.sh](http://pirate.sh) disk image for Raspberry Pi, we're able to write out our pipe command into a file named `autorun.sh`, place that file onto a USB drive, plug it a Raspberry Pi, and it will just start running! 
 
 1. Set up the Raspberry Pi. Download the disk image from [http://pirate.sh](http://pirate.sh) and burn that image to an SD Card (at least 4GB large). See directions for burning disk images to SD Cards [here](https://www.raspberrypi.org/documentation/installation/installing-images/).
