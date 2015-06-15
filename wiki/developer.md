@@ -70,13 +70,29 @@ That's cool, but let's pipe some data using watch.
 Using the [Pirate.sh](http://pirate.sh) disk image for Raspberry Pi, we're able to write out our pipe command into a file named `autorun.sh`, place that file onto a USB drive, plug it a Raspberry Pi, and it will just start running! 
 
 1. Set up the Raspberry Pi. Download the disk image from [http://pirate.sh](http://pirate.sh) and burn that image to an SD Card (at least 4GB large). See directions for burning disk images to SD Cards [here](https://www.raspberrypi.org/documentation/installation/installing-images/).
-2. Get your Recipe  
+2. Write your recipe, name it `autorun.sh`, and place that file along with dependencies on a USB Drive. 
+3. Plug it all in 
 
 
+## Writing or finding your Recipe
+
+### Cooking with pre-built Recipes using Yeobot 
+Looking for Pre-built recipes that use autorun.sh? Check out the [Yeobot Recipes](https://github.com/openpipekit?utf8=%E2%9C%93&query=yeobot) in the Open Pipe Kit organization. 
+
+Have you made your own recipe? Let us know by creating a ticket in the [Open Pipe Kit issue queue](https://github.com/openpipekit/openpipekit/issues). We'll fork you into the openpipekit organization account and make you owner of that repo.  
 
 
+### Finding pre-existing driver for databases and sensors
+Looking to write you own Recipe but not looking to have to write both the push and the pull cli drivers?  Check out the [OPK CLI's](https://github.com/openpipekit?utf8=%E2%9C%93&query=opk-) in the Open Pipe Kit organization.  
 
-## Advanced Pipes
+Have you made your own cli driver? Let us know by creating a ticket in the [Open Pipe Kit issue queue](https://github.com/openpipekit/openpipekit/issues). We'll fork you into the openpipekit organization account and make you owner of that repo.  
+
+
+### Handy sensors we like
+Looking for sensors? [USB Sensors from Yoctopuce](https://www.yoctopuce.com/EN/products/category/usb-environmental-sensors) and the pluggable [Grove Sensors](http://www.seeedstudio.com/wiki/Grove_System#Environmental_Monitoring) for the [GrovePi board](http://www.dexterindustries.com/site/?product=grovepi-board) are super handy. 
+
+
+## Guide to Advanced Pipes
 The example above of one sensor piping one value to a database may be too simple for your application. Below are some other examples that you may run into. Note that much of this is inpsired by the Unix Pipeline which you can read up on [here](https://en.wikipedia.org/wiki/Pipeline_(Unix)).  
 
 ### Structured data
