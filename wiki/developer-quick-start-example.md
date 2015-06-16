@@ -1,5 +1,6 @@
 # Open Pipe Kit - Developer Quick Start
 
+## Rolling the pipe by hand
 Using the [Pirateship disk image for Raspberry Pi](http://pirate.sh) (download the disk image that says "latest"), we can create a pipe that pulls temperature data from the CPU and pushes it to a CSV by adding two files to a USB Drive that we'll plug into our Raspberry Pi.
 
 Create an `autorunonce.sh` file and place the following code in that file. This will run once a download of the command line interfaces that will pull and push data.
@@ -19,6 +20,8 @@ watch -n{{frequencyInSeconds}} './opk-cli--rpi-cpu-temperature/pull | opk-cli--s
 
 Now plug your USB drive into your Raspberry Pi with an Internet connection.  It will run the `runonce.sh` file to download the dependencies and then the `autorun.sh` from there on out. If your Raspberry Pi is not going to have Internet on it's first boot, you can place those dependencies on the USB Drive manually.
 
+
+## Roll the pipe using Yeobot, the robot generator
 Load this code onto a USB drive even faster next time by utilizing a Yeobot Recipe that will download the code and prompt your for the string replacement. Yeobot requires [Node.js](http://nodejs.org).
 ```
 # Install the yeobot cli
