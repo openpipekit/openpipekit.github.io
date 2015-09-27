@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/f1e6c71f.main.css">
+        <link rel="stylesheet" href="styles/27da63dc.main.css">
         <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css">
         <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/roboto.min.css">
         <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
@@ -18,7 +18,6 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
 
     <nav class="navbar navbar-success">
       <div class="container">
@@ -37,10 +36,26 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#guide">Guide</a></li>
+            <li class="dropdown">
+              <a href="#guide" class="dropdown-toggle" data-toggle="dropdown" role="button">Guide <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#step1">Step 1 Plan</a></li>
+                <li><a href="#step2">Step 2 Order</a></li>
+                <li><a href="#step3">Step 3 Build</a></li>
+                <li><a href="#step4">Step 4 Configure</a></li>
+                <li><a href="#step5">Step 5 Deploy</a></li>
+              </ul>
+            </li>
             <li><a href="#examples">Examples </a></li>
-            <li><a href="#configurator">Configurator</a></li>
+            <li><a href="#chat">Chat</a></li>
+            <li><a href="#forum">Forum</a></li>
             <li><a href="#code">Code</a></li>
+            <li class="">
+              <a href="#configurator">Configurator</a>
+            </li>
+            <li class="hidden-xs" style="position: relative">
+              <a style="position: absolute; top: 22px" href="#configurator" class="btn btn-danger btn-fab btn-raised mdi-file-cloud-download"></a>
+            </li>
           </ul>
         </div>
 
@@ -68,6 +83,6 @@
 
         <script src="scripts/88d4927f.plugins.js"></script>
 
-        <script src="scripts/1073ff56.main.js"></script>
+        <script src="scripts/2f102ee6.main.js"></script>
 </body>
 </html>
