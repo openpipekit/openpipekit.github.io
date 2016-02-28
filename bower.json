@@ -1,12 +1,15 @@
 {
-  "name": "openpipekitorg",
+  "name": "opkbakery",
   "version": "0.0.0",
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
     "jquery": "~2.1.0",
     "lodash": "~2.4.1",
     "backbone": "~1.1.0",
-    "modernizr": "~2.7.1"
+    "modernizr": "~2.7.1",
+    "backbone-forms": "~0.14.0",
+    "spin.js": "~2.3.2",
+    "bootstrap-material-design": "~0.3.0"
   },
   "devDependencies": {}
 }

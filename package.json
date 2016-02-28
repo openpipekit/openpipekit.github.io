@@ -1,7 +1,9 @@
 {
-  "name": "openpipekitorg",
+  "name": "opk-bakery",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "jscs": "^2.0.0"
+  },
   "devDependencies": {
     "apache-server-configs": "^2.8.0",
     "grunt": "^0.4.5",
@@ -20,9 +22,9 @@
     "grunt-usemin": "^2.4.0",
     "grunt-rev": "^0.1.0",
     "grunt-open": "^0.2.3",
-    "grunt-sass": "^0.17.0",
-    "load-grunt-tasks": "^0.6.0",
+    "grunt-sass": "^1.0.0",
     "connect-livereload": "^0.4.0",
+    "jit-grunt": "^0.9.1",
     "time-grunt": "^1.0.0",
     "jshint-stylish": "^1.0.0"
   },

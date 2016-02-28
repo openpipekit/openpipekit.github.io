@@ -1,0 +1,8 @@
+#!/bin/sh
+
+grunt --force
+./fix
+cd dist
+git add .
+git commit -m "release"
+git push

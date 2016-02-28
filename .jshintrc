@@ -17,8 +17,8 @@
     "strict": true,
     "jquery": true,
     "globals": {
-        "OpenpipekitOrg": true,
-        "openpipekitorg": true,
+        "OpkBakery": true,
+        "opkbakery": true,
         "_": false,
         "Backbone": false,
         "JST": false,

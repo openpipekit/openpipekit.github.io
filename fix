@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp -r app/bower_components/bootstrap-material-design dist/bower_components/
+cp app/images/* dist/images/

@@ -1,7 +1,7 @@
 {
   "generator-backbone": {
     "appPath": "app",
-    "appName": "OpenpipekitOrg",
+    "appName": "OpkBakery",
     "coffee": false,
     "testFramework": "mocha",
     "templateFramework": "lodash",
