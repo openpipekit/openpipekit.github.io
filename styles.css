@@ -1,0 +1,16 @@
+#md-body a {
+  color: #4caf50 !important;
+}
+.navbar {
+  background: #4caf50 !important;
+}
+.navbar a:hover,.navbar a:focus {
+  color: #FFF !important;
+}
+.active > a {
+  background-color: #000 !important;
+}
+.navbar-nav>.open>a:focus {
+  background: #4caf50 !important;
+}
+
