@@ -17,7 +17,7 @@ The Unix Pipe is a universal standard for connecting two programs. Below you wil
 
 
 
-## Devices / Sensors
+## Devices / Sensors Programs
 
 
 #### Raspberry Pi Temperature
@@ -104,7 +104,7 @@ A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb
 
 
 
-## Databases
+## Database Programs
 
 
 #### Spreadsheet on your USB Drive
@@ -176,7 +176,7 @@ A push CLI that will send an email if piped value is over maximum and under mini
 
 
 
-## Standards
+## Standards for Developers
 Each command must have a `--help` option and we recommend help output follows the docopt standard (http://docopt.org/).
 
 
