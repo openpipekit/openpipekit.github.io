@@ -9,7 +9,7 @@
 
 
 ## Why Unix Pipes?
-The Unix Pipe is a universal standard for connecting two programs. Below you will find programs pulling data from devices and programs for push data to databases that you can mix and match connecting them using the Unix Pipe on something like the $35 Raspberry Pi computer.
+The Unix Pipe is a universal standard for connecting two programs. Below you will find programs for pulling data from devices and programs for pushing data to databases that you can mix and match by connecting them with a Unix Pipe on something like the $35 Raspberry Pi computer.
 
 
 
