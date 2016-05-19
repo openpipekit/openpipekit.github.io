@@ -184,7 +184,7 @@ Each command must have a `--help` option and we recommend help output follows th
 A `pull` command for getting a single reading of one or more sensors on a device.
 
 - Issuing a pull command will print a value on a new line and then exit.
-- If there are more than one sensor values returned,
+- If a pull returns values for more than one sensor, output must be in JSON. 
 
 
 #### stream command
