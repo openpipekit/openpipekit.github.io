@@ -214,9 +214,7 @@ A `push` command for sending one or more sensor values to a database. Compatible
 
 
 #### install command
-An `install` install command for initialization of required environment variables and downloading of dependencies.
-
-- An install command for initialization of required environment variables and downloading of dependencies.
+An `install` command for initialization of required environment variables and downloading of dependencies.
 
 
 #### onboot command
