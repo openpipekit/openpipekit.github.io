@@ -1,4 +1,4 @@
-# Heroic Unix Pipes connecting your devices to the Internet!
+# The Linux way to turn a Raspberry Pi into a gateway for your devices to the Internet of Things 
 
 <img src=images/pipebot-example2.gif width=100% style="border: none">
 
