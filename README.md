@@ -1,4 +1,4 @@
-# The Linux way to turn a Raspberry Pi into a gateway for your devices to the Internet of Things 
+# Pipe data from your devices to the Internet with a Raspberry Pi the "Unix way" 
 
 <img src=images/pipebot-example2.gif width=100% style="border: none">
 
