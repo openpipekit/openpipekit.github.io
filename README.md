@@ -96,8 +96,8 @@ Wireless Bluetooth device with IR Temperature Sensor, Humidity Sensor, Pressure 
 #### Yoctopuce USB Temperature Sensor
 A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-temperature
 
-- URL: https://github.com/openpipekit/opk-cli--yoctopuce-temperature
-- Download: https://github.com/openpipekit/opk-cli--yoctopuce-temperature/archive/0.1.0.tar.gz
+- URL: https://github.com/openpipekit/yoctopuce-temperature-cli
+- Download: https://github.com/openpipekit/yoctopuce-temperature-cli/archive/0.2.0.zip
 
 
 
@@ -127,8 +127,8 @@ Push to a Google Sheet using your Cloudstitch project.
 
 
 #### FarmOS
-- URL: https://github.com/rjsteinert/opk-cli--farmos
-- Download: https://github.com/rjsteinert/opk-cli--farmos/archive/0.1.0.tar.gz
+- URL: https://github.com/openpipekitfarmos-cli
+- Download: https://github.com/openpipekit/farmos-cli/archive/0.2.0.zip
 
 
 #### Dat: versioned data, collaborated
