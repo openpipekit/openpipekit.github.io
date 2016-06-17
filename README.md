@@ -176,23 +176,16 @@ A push CLI that will send an email if piped value is over maximum and under mini
 
 
 
-## Standards for Developers
-Each command must have a `--help` option and we recommend help output follows the docopt standard (http://docopt.org/).
+## What makes an Open Pipe Kit command?
+A bundle of commands actually. We recommend creating folder of executable commands for your device or database. See below what each command can be.
 
 
 #### pull command
-A `pull` command for getting a single reading of one or more sensors on a device.
+A `pull` command for getting the values of one or more sensors on a device.
 
 - Issuing a pull command will print a value on a new line and then exit.
-- If a pull returns values for more than one sensor, output must be in JSON. 
-
-
-#### stream command
-A `stream` command for getting multipe readings of one or more sensors on a device. When a line is returned is up to the logic of the `stream` program.
-
-- Event based sensors make sense to stream as opposed to issuing a `pull` at an arbitrary interval that may miss events.
-- Stream commands do not exit after returning a value but instead keep alive.
-- Every new value is delimited by a new line.
+- Output must be in JSON like `{"sensor1": 42, "sensor2": 99}`.
+- If your device is the kind that prefers to send data over when it feels like it, feel free to not exit and delimit each reading on a new line.
 
 
 #### detect command
@@ -202,17 +195,12 @@ A `detect` command to detect the Sensor IDs available on a device.
 #### push command
 A `push` command for sending one or more sensor values to a database. Compatible with piping from both `pull` and `stream`.
 
-- Accepts input over a `--value=<value>` option or over STDIN (`echo "42" | ./database-cli/push`).
-- `push` commands exit immediately after completing execution when using the `value` parameter.
-- `push` receiving input over a pipe only exit when they receive an exit code over the pipe from another command.
-- Support `stream` command by looking for values on new lines.
-- When the database requires a schema and at least one field name, use the `--field_name=<field_name>` option. To keep thing simple for now, we take a schemaless approach. See experimental specifications below for schema based approaches.
+- Accepts input over STDIN from a pipe (`echo '{"sensor1": 42}' | ./database-cli/push`).
+- `push` only exits when an exit code is received.
 
 
 #### install command
 An `install` install command for initialization of required environment variables and downloading of dependencies.
-
-- An install command for initialization of required environment variables and downloading of dependencies.
 
 
 #### onboot command
