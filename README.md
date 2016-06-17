@@ -176,7 +176,7 @@ A push CLI that will send an email if piped value is over maximum and under mini
 
 
 
-## What makes an Open Pipe Kit command?
+## What makes an Open Pipe Kit program?
 A bundle of commands actually. We recommend creating folder of executable commands for your device or database. See below what each command can be.
 
 
