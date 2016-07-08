@@ -97,7 +97,7 @@ Wireless Bluetooth device with IR Temperature Sensor, Humidity Sensor, Pressure 
 A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-temperature
 
 - URL: https://github.com/openpipekit/yoctopuce-temperature-cli
-- Download: https://github.com/openpipekit/yoctopuce-temperature-cli/archive/0.2.0.zip
+- Download: https://github.com/openpipekit/yoctopuce-temperature-cli/archive/0.2.1.zip
 
 
 
