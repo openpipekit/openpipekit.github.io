@@ -23,8 +23,8 @@ The Unix Pipe is a universal standard for connecting two programs. Below you wil
 #### Raspberry Pi Temperature
 Pull the temperature from the Raspberry Pi's temperature sensor on the CPU.
 
-- URL: https://github.com/PipeBots/pipebot-raspberry-pi-cpu-temperature-cli
-- Download: https://github.com/PipeBots/pipebot-raspberry-pi-cpu-temperature-cli/archive/0.0.0.zip
+- URL: https://github.com/openpipekit/rpi-cpu-temperature
+- Download: https://github.com/openpipekit/rpi-cpu-temperature/archive/0.2.0.zip
 
 
 #### 1-wire temperature sensor
