@@ -1,4 +1,4 @@
-# Heroic Unix Pipes connecting your devices to the Internet!
+# Turn your Raspberry Pi into a gateway for your devices to the Internet of Things 
 
 <img src=images/pipebot-example2.gif width=100% style="border: none">
 
@@ -23,8 +23,8 @@ The Unix Pipe is a universal standard for connecting two programs. Below you wil
 #### Raspberry Pi Temperature
 Pull the temperature from the Raspberry Pi's temperature sensor on the CPU.
 
-- URL: https://github.com/PipeBots/pipebot-raspberry-pi-cpu-temperature-cli
-- Download: https://github.com/PipeBots/pipebot-raspberry-pi-cpu-temperature-cli/archive/0.0.0.zip
+- URL: https://github.com/openpipekit/rpi-cpu-temperature
+- Download: https://github.com/openpipekit/rpi-cpu-temperature/archive/0.2.0.zip
 
 
 #### 1-wire temperature sensor
@@ -98,8 +98,8 @@ Wireless Bluetooth device with IR Temperature Sensor, Humidity Sensor, Pressure 
 #### Yoctopuce USB Temperature Sensor
 A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-temperature
 
-- URL: https://github.com/openpipekit/opk-cli--yoctopuce-temperature
-- Download: https://github.com/openpipekit/opk-cli--yoctopuce-temperature/archive/0.1.0.tar.gz
+- URL: https://github.com/openpipekit/yoctopuce-temperature-cli
+- Download: https://github.com/openpipekit/yoctopuce-temperature-cli/archive/0.2.1.zip
 
 
 
@@ -109,11 +109,11 @@ A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb
 ## Database Programs
 
 
-#### Spreadsheet on your USB Drive
-A CLI for saving data to CSV so it can be opened in Excel, Libre Office, or Google Sheets.
+#### Spreadsheets
+A CLI for saving data to CSV (Excel) so it can be opened in Excel, Libre Office, or Google Sheets.
 
-- URL: https://github.com/openpipekit/opk-cli--simple-csv
-- Download: https://github.com/openpipekit/opk-cli--simple-csv/archive/0.2.0.tar.gz
+- URL: https://github.com/openpipekit/csv
+- Download: https://github.com/openpipekit/csv/archive/0.0.0.zip
 
 
 #### Adafruit IO
@@ -131,8 +131,8 @@ Push to a Google Sheet using your Cloudstitch project.
 
 
 #### FarmOS
-- URL: https://github.com/rjsteinert/opk-cli--farmos
-- Download: https://github.com/rjsteinert/opk-cli--farmos/archive/0.1.0.tar.gz
+- URL: https://github.com/openpipekitfarmos-cli
+- Download: https://github.com/openpipekit/farmos-cli/archive/0.2.0.zip
 
 
 #### Dat: versioned data, collaborated
@@ -180,23 +180,16 @@ A push CLI that will send an email if piped value is over maximum and under mini
 
 
 
-## Standards for Developers
-Each command must have a `--help` option and we recommend help output follows the docopt standard (http://docopt.org/).
+## What makes an Open Pipe Kit program?
+A bundle of commands actually. We recommend creating folder of executable commands for your device or database. See below what each command can be.
 
 
 #### pull command
-A `pull` command for getting a single reading of one or more sensors on a device.
+A `pull` command for getting the values of one or more sensors on a device.
 
 - Issuing a pull command will print a value on a new line and then exit.
-- If there are more than one sensor values returned,
-
-
-#### stream command
-A `stream` command for getting multipe readings of one or more sensors on a device. When a line is returned is up to the logic of the `stream` program.
-
-- Event based sensors make sense to stream as opposed to issuing a `pull` at an arbitrary interval that may miss events.
-- Stream commands do not exit after returning a value but instead keep alive.
-- Every new value is delimited by a new line.
+- Output must be in JSON like `{"sensor1": 42, "sensor2": 99}`.
+- If your device is the kind that prefers to send data over when it feels like it, feel free to not exit and delimit each reading on a new line.
 
 
 #### detect command
@@ -206,11 +199,8 @@ A `detect` command to detect the Sensor IDs available on a device.
 #### push command
 A `push` command for sending one or more sensor values to a database. Compatible with piping from both `pull` and `stream`.
 
-- Accepts input over a `--value=<value>` option or over STDIN (`echo "42" | ./database-cli/push`).
-- `push` commands exit immediately after completing execution when using the `value` parameter.
-- `push` receiving input over a pipe only exit when they receive an exit code over the pipe from another command.
-- Support `stream` command by looking for values on new lines.
-- When the database requires a schema and at least one field name, use the `--field_name=<field_name>` option. To keep thing simple for now, we take a schemaless approach. See experimental specifications below for schema based approaches.
+- Accepts input over STDIN from a pipe (`echo '{"sensor1": 42}' | ./database-cli/push`).
+- `push` only exits when an exit code is received.
 
 
 #### install command
