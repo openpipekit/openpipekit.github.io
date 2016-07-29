@@ -107,8 +107,8 @@ A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb
 ## Database Programs
 
 
-#### Spreadsheet on your USB Drive
-A CLI for saving data to CSV so it can be opened in Excel, Libre Office, or Google Sheets.
+#### Spreadsheets
+A CLI for saving data to CSV (Excel) so it can be opened in Excel, Libre Office, or Google Sheets.
 
 - URL: https://github.com/openpipekit/csv
 - Download: https://github.com/openpipekit/csv/archive/0.0.0.zip
