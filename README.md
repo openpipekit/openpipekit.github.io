@@ -110,8 +110,8 @@ A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb
 #### Spreadsheet on your USB Drive
 A CLI for saving data to CSV so it can be opened in Excel, Libre Office, or Google Sheets.
 
-- URL: https://github.com/openpipekit/opk-cli--simple-csv
-- Download: https://github.com/openpipekit/opk-cli--simple-csv/archive/0.2.0.tar.gz
+- URL: https://github.com/openpipekit/csv
+- Download: https://github.com/openpipekit/csv/archive/0.0.0.zip
 
 
 #### Adafruit IO
