@@ -28,6 +28,8 @@ Pull the temperature from the Raspberry Pi's temperature sensor on the CPU.
 
 
 #### 1-wire temperature sensor
+A common inexpesnsive digital sensor that allows multiple sensors to connect to a single GPIO pin
+
 - URL: https://github.com/openpipekit/opk-1-wire-cli
 - Download: https://github.com/openpipekit/opk-1-wire-cli/archive/4.tar.gz
 
@@ -115,6 +117,8 @@ A CLI for saving data to CSV (Excel) so it can be opened in Excel, Libre Office,
 
 
 #### Adafruit IO
+Nice free web based dashboard.
+
 - URL: https://github.com/openpipekit/opk-cli--adafruit-io
 - Download: https://github.com/PipeBots/pipebot-adafruit-io-cli/archive/0.1.0.zip
 
@@ -200,7 +204,7 @@ A `push` command for sending one or more sensor values to a database. Compatible
 
 
 #### install command
-An `install` install command for initialization of required environment variables and downloading of dependencies.
+An `install` command for initialization of required environment variables and downloading of dependencies.
 
 
 #### onboot command
