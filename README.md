@@ -1,26 +1,30 @@
-# Turn your Raspberry Pi into a gateway for your devices to the Internet of Things 
+# Get in control of your IoT data using pipes! 
+
+> Open Pipe Kit is an open research project seeking to democratize the Internet of Things by seeking out tools and techniques that prioritize user privacy, freedom, and convenience in managing all these little devices running around.  
+
+
+## The problem 
+__User have little to no control over their data being generated on devices. They are not able to say "I want X device data to go to Y database, not Z database that the hardware manufaturer tied my device to."__ [Every](http://supermechanical.com/twine/) [device](http://www2.meethue.com/en-us/) [requires](http://pine-environmental.com/product/instruments/tsi_dustrak_8530/) [their](http://www.samsung.com/us/explore/family-hub-refrigerator/) [own](http://global.parrot.com/au/products/flower-power/) [custom](https://edyn.com/) [Gateway](https://aws.amazon.com/iot/button/) device or app, Gateway devices and apps that only pipe data to the one database on the Internet they were designed for. If you have multiple devices, you end up with your data spread out and often in the hands of providers whom you are [reluctant to sign their TOS in order to use their device](http://www.npr.org/sections/thesalt/2014/01/21/264577744/should-farmers-give-john-deere-and-monsanto-their-data).  
+
+
+
+## The answer 
+Imagine a framework for the Internet of Things that empowers users to where their data is piped to, a framework that could could extend your preferred language, a framework you could run on ubiquitious devices like the $35 Raspberry Pi. After much discussion and prototyping, we realized the ultimate framework for the Internet of Things was in front of us the entire time, we were just using it wrong. It's Linux! More specifically, the Unix Pipe. 
+
+The Unix Pipe allows any program in Linux to send a stream of text to another program in Linux. The example below demostrates a python program that pulls the CPU temperature of a Raspberry Pi, pipes it, the Adafruit program written in node.js receives and sends the data to Adafruit.io.  
 
 <img src=images/pipebot-example2.gif width=100% style="border: none">
 
-Devices for environmental monitoring are often not capable of connecting to the Internet due to issues around power consumption, network availability, network cost (maybe 5G network policies will change this), and device form factor.  For the time being, IoT devices most often require a "gateway" device that is able to interface with both the device and the Internet and takes on the responsibility of piping data between a device and some online database.
+Pick any device or database program below and they are compatible with each other over a Unix pipe! Want to write your own? Feel free to write it in any language you wish.  
 
-The problem with the current status quo is that because every device needs their own custom "gateway" device and that gateway device only pipes data to one database on the Internet, you end up with your data spread out and often in the hands of providers whom you are [reluctant to sign their TOS in order to use your device](http://www.npr.org/sections/thesalt/2014/01/21/264577744/should-farmers-give-john-deere-and-monsanto-their-data). Do you use a couple different devices? Have fun checking multiple places for your data. 
-
-That's why Open Pipe Kit advocates for building a universal gateway that can send data from all of your devices to any database you decide. Best of all, we don't have to invent any hardware or software, Open Pipe Kit is a set of guidelines for building gateways using tools that already exist. Pick any pull or push program below and they are compatible with each other! Want to write your own? Feel free to write it in any language you wish.  
-
-
-
-
-## Why Unix Pipes?
-The Unix Pipe is a universal standard for connecting two programs. Below you will find programs for pulling data from devices/sensors and programs for pushing data to databases that you can mix and match by connecting them with a Unix Pipe on something like the $35 Raspberry Pi computer.
+## Next steps
+- Produce educational materials on how to configure a Raspberry Pi to pipe data from devices to online databases.
+- Develop more Device and Database programs.
+- Explore experimental tools for configuring pipes.
 
 
 
-
-
-
-
-## Devices / Sensors Programs
+## Devices
 
 
 #### Raspberry Pi Temperature
@@ -109,7 +113,7 @@ A USB temperature sensor from Yoctopuce http://www.yoctopuce.com/EN/products/usb
 
 
 
-## Database Programs
+## Databases 
 
 
 #### Spreadsheets
@@ -173,17 +177,7 @@ A push CLI that will send an email if piped value is over maximum and under mini
 
 
 
-
-
-
-
-
-
-
-
-
-
-## What makes an Open Pipe Kit program?
+## Develop 
 A bundle of commands actually. We recommend creating folder of executable commands for your device or database. See below what each command can be.
 
 
