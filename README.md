@@ -16,7 +16,7 @@ The Unix Pipe allows any program in Linux to send a stream of text to another pr
 
 So we started writing programs to pull data from Things and programs to push data to Databases on the Internet. Pick any Thing or Database program below and they are compatible with each other over a Unix pipe! Want to write your own? Feel free to write it in any language you wish.  
 
-Here is an example of using a Raspberry Pi to pull data from a Yocto USB Temperature and push that data to farmOS.  
+[Here is an example of using a Raspberry Pi to pull data from a Yocto USB Temperature and push that data to farmOS.](https://www.youtube.com/watch?v=fCflGeOpTqk)
 
 [](https://www.youtube.com/watch?v=fCflGeOpTqk)
 
