@@ -43,7 +43,7 @@ A common inexpesnsive digital sensor that allows multiple sensors to connect to 
 
 - URL: https://github.com/openpipekit/opk-1-wire-cli
 - Download: https://github.com/openpipekit/opk-1-wire-cli/archive/4.tar.gz
-
+- Hardware tutorial: https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing
 
 ### Arduino Firmata adaptor
 An Open Pipe Kit command line interface to any Arduino using the Firmata firmware, which is connected to any sensor via analog, digital, i2c etc interface. By Jeff Warren of Public Lab.
