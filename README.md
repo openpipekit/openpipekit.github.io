@@ -8,9 +8,9 @@ Some folks have referred to the state of the Internet of Things as the [Internet
 
 
 ## The answer 
-Imagine a tool for the Internet of Things that empowers users choose where their data is piped to, a tool that you can extend using your preferred programming language, a tool you could run on ubiquitious devices like the $35 Raspberry Pi. After much discussion and prototyping, we realized the ultimate tool for the Internet of Things was in front of us the entire time, we were just using it wrong. It's Linux! More specifically, the Unix Pipe. 
+Imagine a tool for the Internet of Things that empowers users to choose where their data is piped to, a tool that you can extend using your preferred programming language, a tool you could run on ubiquitous devices like the $35 Raspberry Pi. After much discussion and prototyping, we realized the ultimate tool for the Internet of Things was in front of us the entire time, we were just using it wrong. It's Linux! More specifically, the Unix Pipe. 
 
-The Unix Pipe allows any program in Linux to send a stream of text to another program in Linux. The example below demostrates a python program that pulls the CPU temperature of a Raspberry Pi, pipes it, the Adafruit program written in node.js receives and sends the data to Adafruit.io.  
+The Unix Pipe allows any program in Linux to send a stream of text to another program in Linux. The example below demonstrates a python program that pulls the CPU temperature of a Raspberry Pi and pipes it to the Adafruit program written in node.js which receives and sends the data to Adafruit.io.  
 
 <img src=images/pipebot-example2.gif width=100% style="border: none">
 
