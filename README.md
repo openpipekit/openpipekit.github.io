@@ -131,7 +131,7 @@ Push to a Google Sheet using your Cloudstitch project.
 
 
 #### FarmOS
-- URL: https://github.com/openpipekitfarmos-cli
+- URL: https://github.com/openpipekit/farmos-cli
 - Download: https://github.com/openpipekit/farmos-cli/archive/0.2.0.zip
 
 
